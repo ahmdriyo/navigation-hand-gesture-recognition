@@ -6,9 +6,15 @@ const HomePage = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       {/* Navbar */}
       <Navbar 
-        logo="ModernApp"
-        ctaText="Get Started"
-        ctaHref="/get-started"
+        logo="GestureNav"
+        navItems={[
+          { label: 'Home', href: '/' },
+          { label: 'Documentation', href: '/documentation' },
+          { label: 'Demo', href: '/demo' },
+          { label: 'Contact', href: '/contact' },
+        ]}
+        ctaText="View Docs"
+        ctaHref="/documentation"
       />
 
       {/* Hero Section */}
@@ -24,12 +30,18 @@ const HomePage = () => {
               smooth animations, blur effects, and modern design principles.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:scale-105">
+              <a 
+                href="/demo" 
+                className="px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+              >
                 Try Demo
-              </button>
-              <button className="px-8 py-3 border-2 border-gray-300 text-gray-700 font-medium rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors duration-200">
-                Learn More
-              </button>
+              </a>
+              <a 
+                href="/documentation" 
+                className="px-8 py-3 border-2 border-gray-300 text-gray-700 font-medium rounded-lg hover:border-blue-600 hover:text-blue-600 transition-colors duration-200"
+              >
+                Read Documentation
+              </a>
             </div>
           </div>
         </div>
