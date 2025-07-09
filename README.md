@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Navigation Hand Gesture Recognition
 
-## Getting Started
+Sebuah aplikasi web modern yang menggunakan Next.js 14 dan Tailwind CSS untuk mendemonstrasikan sistem navigasi berbasis gesture tangan menggunakan teknologi MediaPipe.
 
-First, run the development server:
+## 🚀 Fitur Utama
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Navbar Modern & Responsif**: Navbar dengan efek blur dan animasi smooth
+- **Dokumentasi Lengkap**: Halaman dokumentasi yang menjelaskan teknologi dan cara kerja sistem
+- **TypeScript**: Fully typed tanpa penggunaan `any`
+- **Responsive Design**: Mendukung semua ukuran layar
+- **Hand Gesture Navigation**: Konsep navigasi menggunakan gerakan tangan (dalam pengembangan)
+
+## 📁 Struktur Proyek
+
+```
+navigation-hand-gesture-recognition/
+├── app/
+│   ├── components/
+│   │   ├── Navbar.tsx          # Komponen navbar modern
+│   │   └── types.ts            # Type definitions
+│   ├── documentation/
+│   │   └── page.tsx            # Halaman dokumentasi
+│   ├── demo/
+│   │   └── page.tsx            # Halaman demo (placeholder)
+│   ├── contact/
+│   │   └── page.tsx            # Halaman kontak (placeholder)
+│   ├── layout.tsx              # Root layout
+│   ├── page.tsx                # Halaman utama
+│   └── globals.css             # Global styles
+├── public/                     # Static assets
+├── package.json
+├── tailwind.config.ts
+├── tsconfig.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Teknologi yang Digunakan
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js 14** (App Router)
+- **TypeScript** (Strict mode, no any types)
+- **Tailwind CSS** (Styling dan animasi)
+- **Lucide React** (Icons untuk navbar)
+- **MediaPipe** (Planned untuk gesture recognition)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📚 Halaman yang Tersedia
 
-## Learn More
+### 1. Home (`/`)
+- Hero section dengan pengenalan aplikasi
+- Demo sections untuk menunjukkan scroll effect navbar
+- Modern gradient design
 
-To learn more about Next.js, take a look at the following resources:
+### 2. Documentation (`/documentation`)
+- Penjelasan lengkap tentang Hand Gesture Navigation
+- Informasi teknis MediaPipe dan cara kerja sistem
+- Contoh gesture dan workflow yang didukung
+- Link ke dokumentasi resmi MediaPipe
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3. Demo (`/demo`)
+- Placeholder untuk live demo (dalam pengembangan)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 4. Contact (`/contact`)
+- Informasi kontak dan placeholder untuk form
 
-## Deploy on Vercel
+## 🎨 Komponen Navbar
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Navbar yang telah dibuat memiliki fitur:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Sticky positioning** dengan efek blur saat scroll
+- **Responsive design** dengan hamburger menu untuk mobile
+- **Smooth animations** menggunakan Tailwind CSS
+- **TypeScript typed** tanpa penggunaan `any`
+- **Customizable props** untuk logo, menu items, dan CTA button
+
+### Props Navbar:
+```typescript
+interface NavbarProps {
+  logo?: string;           // Text logo
+  navItems?: NavItem[];    // Array menu items
+  ctaText?: string;        // CTA button text
+  ctaHref?: string;        // CTA button link
+  className?: string;      // Additional CSS classes
+}
+```
+
+## 🚀 Cara Menjalankan
+
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Jalankan development server:
+```bash
+npm run dev
+```
+
+3. Buka browser dan akses: `http://localhost:3000`
+
+## 📖 Dokumentasi MediaPipe
+
+Untuk informasi lengkap tentang teknologi MediaPipe yang digunakan, kunjungi:
+- [MediaPipe HandLandmarker Documentation](https://developers.google.com/mediapipe/solutions/vision/hand_landmarker)
+- [MediaPipe Official Website](https://mediapipe.dev/)
+
+## 🔮 Roadmap
+
+- [ ] Implementasi MediaPipe HandLandmarker
+- [ ] Live camera feed dan gesture detection
+- [ ] Real-time navigation menggunakan gesture
+- [ ] Training custom gesture models
+- [ ] Performance optimization
+- [ ] Mobile app version
+
+## 📄 License
+
+MIT License - silakan gunakan untuk pembelajaran dan pengembangan.
+
+---
+
+Dibuat dengan ❤️ menggunakan Next.js 14 dan Tailwind CSS

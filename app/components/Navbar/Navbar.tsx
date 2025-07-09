@@ -1,21 +1,21 @@
 'use client';
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { NavItem, NavbarProps } from './types';
+import { NavItem, NavbarProps } from '../../types/types';
+import { RxAccessibility } from 'react-icons/rx';
 
 const defaultNavItems: NavItem[] = [
   { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
-  { label: 'Services', href: '/services' },
+  { label: 'Documentation', href: '/documentation' },
+  { label: 'Demo', href: '/demo' },
   { label: 'Contact', href: '/contact' },
 ];
 
 const Navbar: React.FC<NavbarProps> = ({
-  logo = 'YourLogo',
+  logo = <RxAccessibility  size={30} color='blue'/>,
   navItems = defaultNavItems,
-  ctaText = 'Get Started',
-  ctaHref = '/get-started',
+  ctaText = 'Try Demo',
+  ctaHref = '/demo',
   className = '',
 }) => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
