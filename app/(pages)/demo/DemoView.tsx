@@ -1,23 +1,10 @@
 "use client";
-import Navbar from "../../components/Navbar/Navbar";
 import { useGlobalStore } from "../../store/globalState";
 
 const DemoView = () => {
   const { isSwitchOn, toggleSwitch } = useGlobalStore();
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-      <Navbar
-        logo="GestureNav"
-        navItems={[
-          { label: "Home", href: "/" },
-          { label: "Documentation", href: "/documentation" },
-          { label: "Demo", href: "/demo" },
-          { label: "Contact", href: "/contact" },
-        ]}
-        ctaText="View Docs"
-        ctaHref="/documentation"
-      />
-
       <main className="pt-16">
         <section className="py-20 px-4">
           <div className="max-w-4xl mx-auto text-center">

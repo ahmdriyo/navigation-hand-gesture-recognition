@@ -17,7 +17,6 @@ export default function HandGestureDetection() {
 
   useEffect(() => {
     if (!gestureOutput) return;
-
     switch (gestureOutput) {
       case "Gesture: Victory":
         router.push("/");
@@ -76,7 +75,6 @@ export default function HandGestureDetection() {
         video: true,
       });
       setStream(mediaStream);
-
       if (videoRef.current) {
         videoRef.current.srcObject = mediaStream;
         videoRef.current.play();
@@ -139,12 +137,13 @@ export default function HandGestureDetection() {
     };
 
     enableCam();
+    const video = videoRef.current;
     return () => {
       if (animationFrameId.current)
         window.cancelAnimationFrame(animationFrameId.current);
-      if (videoRef.current) {
-        videoRef.current.pause();
-        videoRef.current.srcObject = null;
+      if (video) {
+        video.pause();
+        video.srcObject = null;
       }
       if (stream) {
         stream.getTracks().forEach((track) => track.stop());
@@ -152,16 +151,6 @@ export default function HandGestureDetection() {
       }
     };
   }, [gestureRecognizer, isSwitchOn]);
-
-  // const text = [
-  //   '✌️ to "/" ',
-  //   '🖐️ to "/news" ',
-  //   '☝️ to "/type-transportation" ',
-  //   '✊ to "/schedule/Travel" ',
-  //   '👎 to "/transport-operator" ',
-  //   '🤟 to "/route/Travel" ',
-  //   '👍 to "/city" ',
-  // ]
 
   return (
     <>

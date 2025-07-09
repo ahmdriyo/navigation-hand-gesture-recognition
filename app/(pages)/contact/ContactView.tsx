@@ -1,21 +1,8 @@
 import React from 'react';
-import Navbar from '../../components/Navbar/Navbar';
 
 const ContactView = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-teal-100">
-      <Navbar 
-        logo="GestureNav"
-        navItems={[
-          { label: 'Home', href: '/' },
-          { label: 'Documentation', href: '/documentation' },
-          { label: 'Demo', href: '/demo' },
-          { label: 'Contact', href: '/contact' },
-        ]}
-        ctaText="View Docs"
-        ctaHref="/documentation"
-      />
-
       <main className="pt-16">
         <section className="py-20 px-4">
           <div className="max-w-4xl mx-auto text-center">
