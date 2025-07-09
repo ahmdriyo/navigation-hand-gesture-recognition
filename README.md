@@ -26,7 +26,12 @@ Sebuah aplikasi web revolusioner yang menggunakan Next.js 14 dan teknologi AI Me
 | Closed Fist | ✊ | 
 | I Love You | 🤟 |
 
-## �📁 Struktur Proyek
+
+🌐 Link demo:
+👉 https://www.handgesturenavigationwithmediapipe.live
+
+
+## 📁 Struktur Proyek
 
 ```
 navigation-hand-gesture-recognition/
@@ -34,32 +39,31 @@ navigation-hand-gesture-recognition/
 │   ├── components/
 │   │   ├── Navbar/
 │   │   │   └── Navbar.tsx              # Komponen navbar modern
-│   │   ├── HandGestureDetection/
-│   │   │   └── HandGestureDetection.tsx # Core gesture recognition
-│   │   └── types.ts                    # Type definitions
+│   │   └── HandGestureDetection/
+│   │       └── HandGestureDetection.tsx # Core gesture recognition
 │   ├── store/
-│   │   └── globalState.ts              # Zustand global state
+│   │   └── globalState.ts              # Zustand global state management
+│   ├── types/
+│   │   └── types.ts                    # TypeScript type definitions
 │   ├── (pages)/
 │   │   ├── home/
 │   │   │   └── HomeView.tsx            # Home page component
-│   │   └── documentation/
-│   │       └── DocumentationView.tsx   # Documentation component
-│   ├── documentation/
-│   │   └── page.tsx                    # Documentation page
-│   ├── demo/
-│   │   └── page.tsx                    # Demo page dengan gesture control
-│   ├── contact/
-│   │   └── page.tsx                    # Contact page
+│   │   ├── documentation/
+│   │   │   ├── page.tsx                # Documentation page route
+│   │   │   └── DocumentationView.tsx   # Documentation component
+│   │   ├── demo/
+│   │   │   ├── page.tsx                # Demo page route
+│   │   │   └── DemoView.tsx            # Demo component dengan gesture control
+│   │   └── contact/
+│   │       ├── page.tsx                # Contact page route
+│   │       └── ContactView.tsx         # Contact component
+│   ├── fonts/
+│   │   ├── GeistVF.woff                # Geist variable font
+│   │   └── GeistMonoVF.woff           # Geist mono variable font
 │   ├── layout.tsx                      # Root layout dengan SEO optimized
-│   ├── page.tsx                        # Main page
-│   └── globals.css                     # Global styles
-├── pages/
-│   └── _document.tsx                   # Custom document untuk SEO
-├── public/
-│   ├── robots.txt                      # SEO robots file
-│   ├── sitemap.xml                     # SEO sitemap
-│   ├── manifest.json                   # PWA manifest
-│   ├── sw.js                          # Service worker
+│   ├── page.tsx                        # Main page route
+│   └── globals.css                     # Global CSS styles
+└── public/
 │   └── icon-aksesibilitas.png         # App icon
 ├── next-sitemap.config.js             # Sitemap configuration
 ├── package.json
@@ -179,7 +183,7 @@ interface GestureState {
 
 1. Clone repository:
 ```bash
-git clone https://github.com/yourusername/navigation-hand-gesture-recognition.git
+git clone https://github.com/ahmdriyo/navigation-hand-gesture-recognition.git
 cd navigation-hand-gesture-recognition
 ```
 
