@@ -182,6 +182,39 @@ const DemoView = () => {
                       </div>
                     </div>
                   </div>
+                  <div className="text-left">
+                    <div className="flex items-center mb-2">
+                      <span className="text-2xl mr-3">👎</span>
+                      <div>
+                        <p className="font-medium text-blue-900">Thumbs Down</p>
+                        <p className="text-sm text-blue-600">
+                          -
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="text-left">
+                    <div className="flex items-center mb-2">
+                      <span className="text-2xl mr-3">✊</span>
+                      <div>
+                        <p className="font-medium text-blue-900">Closed_Fist</p>
+                        <p className="text-sm text-blue-600">
+                          -
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="text-left">
+                    <div className="flex items-center mb-2">
+                      <span className="text-2xl mr-3">🤟</span>
+                      <div>
+                        <p className="font-medium text-blue-900">ILoveYou</p>
+                        <p className="text-sm text-blue-600">
+                          -
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             )}

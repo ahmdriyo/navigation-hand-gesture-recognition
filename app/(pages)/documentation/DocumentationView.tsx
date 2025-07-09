@@ -215,7 +215,15 @@ const loadGestureRecognizer = async () => {
                     rel="noopener noreferrer"
                     className="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:border-gray-400 hover:bg-gray-50 transition-colors duration-200 text-sm font-semibold text-center flex items-center justify-center gap-2 shadow-md"
                   >
-                    🔗 GitHub Repository
+                    🔗 GitHub Repository Mediapipe
+                  </a>
+                  <a
+                    href="https://github.com/ahmdriyo/navigation-hand-gesture-recognition"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 border border-gray-300 bg-red-500 text-gray-100 rounded-lg hover:border-gray-50 hover:bg-red-600 transition-colors duration-200 text-sm font-semibold text-center flex items-center justify-center gap-2 shadow-md"
+                  >
+                    🔥 My GitHub Repository
                   </a>
                 </div>
               </div>
