@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../../components/Navbar/Navbar';
 
-const ContactPage: React.FC = () => {
+const ContactView = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-teal-100">
       <Navbar 
@@ -29,11 +29,11 @@ const ContactPage: React.FC = () => {
               <div className="grid md:grid-cols-2 gap-6 text-left">
                 <div className="p-6 bg-white rounded-xl shadow-sm">
                   <h3 className="text-lg font-semibold text-gray-900 mb-3">📧 Email</h3>
-                  <p className="text-gray-600">contact@gesturenav.com</p>
+                  <p className="text-gray-600">ahmadriyo.tbn@gmail.com</p>
                 </div>
                 <div className="p-6 bg-white rounded-xl shadow-sm">
                   <h3 className="text-lg font-semibold text-gray-900 mb-3">🌐 GitHub</h3>
-                  <p className="text-gray-600">github.com/gesturenav</p>
+                  <p className="text-gray-600">github.com/ahmdriyo</p>
                 </div>
               </div>
             </div>
@@ -52,4 +52,4 @@ const ContactPage: React.FC = () => {
   );
 };
 
-export default ContactPage;
+export default ContactView;

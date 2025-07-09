@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { NavItem, NavbarProps } from './types';
+import { NavItem, NavbarProps } from '../../types/types';
 
 const defaultNavItems: NavItem[] = [
   { label: 'Home', href: '/' },

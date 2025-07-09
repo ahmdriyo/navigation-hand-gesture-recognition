@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../../components/Navbar/Navbar';
 
 interface GestureExample {
   gesture: string;
@@ -18,7 +18,7 @@ interface WorkflowStep {
   description: string;
 }
 
-const DocumentationPage: React.FC = () => {
+const DocumentationViwe = () => {
   const gestureExamples: GestureExample[] = [
     { gesture: '✋', description: 'Open Hand', action: 'Stop/Pause' },
     { gesture: '✌️', description: 'Peace Sign', action: 'Navigate to About' },
@@ -55,7 +55,7 @@ const DocumentationPage: React.FC = () => {
     {
       step: 3,
       title: 'Interpretasi Perintah',
-      description: 'Gesture diubah menjadi perintah navigasi (contoh: ✊ = Home, ✌️ = About)'
+      description: 'Gesture diubah menjadi perintah navigasi (contoh: 🖐️ = Documentation, ✌️ = Home)'
     },
     {
       step: 4,
@@ -370,4 +370,4 @@ const DocumentationPage: React.FC = () => {
   );
 };
 
-export default DocumentationPage;
+export default DocumentationViwe;
