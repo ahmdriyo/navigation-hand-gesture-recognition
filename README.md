@@ -1,44 +1,42 @@
 # 🖐️ Hand Gesture Navigation
 
-Sebuah aplikasi web revolusioner yang menggunakan Next.js 14 dan teknologi AI MediaPipe untuk memberikan pengalaman navigasi web yang inovatif melalui pengenalan gesture tangan real-time.
+A revolutionary web application built with Next.js 14 and MediaPipe AI technology to provide an innovative web navigation experience through real-time hand gesture recognition.
 
-## 🚀 Fitur Utama
+## 🚀 Key Features
 
-- **🤖 AI-Powered Gesture Recognition**: Sistem pengenalan gesture real-time menggunakan MediaPipe
-- **⚡ Real-time Navigation**: Navigasi instan dengan gesture tangan tanpa perlu sentuhan
-- **🎨 Modern UI/UX**: Interface yang elegan dengan animasi smooth dan efek blur
-- **📱 Fully Responsive**: Mendukung semua ukuran layar dari mobile hingga desktop
-- **♿ Accessibility First**: Mendukung navigasi alternatif untuk aksesibilitas
-- **🔒 Privacy-First**: Semua processing dilakukan secara lokal, tidak ada data yang dikirim ke server
-- **⚡ Performance Optimized**: PWA ready dengan caching dan optimasi SEO
-- **📚 Documentation Lengkap**: Dokumentasi teknis yang komprehensif dan mudah dipahami
+- **🤖 AI-Powered Gesture Recognition**: Real-time gesture recognition system using MediaPipe
+- **⚡ Real-time Navigation**: Instant navigation with hand gestures without touch
+- **🎨 Modern UI/UX**: Elegant interface with smooth animations and blur effects
+- **📱 Fully Responsive**: Supports all screen sizes from mobile to desktop
+- **♿ Accessibility First**: Supports alternative navigation for accessibility
+- **🔒 Privacy-First**: All processing is done locally, no data sent to servers
+- **⚡ Performance Optimized**: PWA ready with caching and SEO optimization
+- **📚 Complete Documentation**: Comprehensive and easy-to-understand technical documentation
 - **🔧 Developer Friendly**: TypeScript strict mode, component-based architecture
 
-## 🎯 Gesture yang Didukung
+## 🎯 Supported Gestures
 
-| Gesture | Emoji | Aksi | Halaman Tujuan |
-|---------|-------|------|----------------|
-| Victory | ✌️ | Navigate to Home | `/` |
-| Open Palm | ✋ | Navigate to Documentation | `/documentation` |
-| Pointing Up | ☝️ | Navigate to Demo | `/demo` |
-| Thumbs Up | 👍 | Navigate to Contact | `/contact` |
-| Thumbs Down | 👎 |
-| Closed Fist | ✊ | 
-| I Love You | 🤟 |
+| Gesture     | Emoji | Action                    | Target Page      |
+| ----------- | ----- | ------------------------- | ---------------- |
+| Victory     | ✌️    | Navigate to Home          | `/`              |
+| Open Palm   | ✋    | Navigate to Documentation | `/documentation` |
+| Pointing Up | ☝️    | Navigate to Demo          | `/demo`          |
+| Thumbs Up   | 👍    | Navigate to Contact       | `/contact`       |
+| Thumbs Down | 👎    |
+| Closed Fist | ✊    |
+| I Love You  | 🤟    |
 
-
-🌐 Link demo:
+🌐 Demo Link:
 👉 https://www.handgesturenavigationwithmediapipe.live
 
-
-## 📁 Struktur Proyek
+## 📁 Project Structure
 
 ```
 navigation-hand-gesture-recognition/
 ├── app/
 │   ├── components/
 │   │   ├── Navbar/
-│   │   │   └── Navbar.tsx              # Komponen navbar modern
+│   │   │   └── Navbar.tsx              # Modern navbar component
 │   │   └── HandGestureDetection/
 │   │       └── HandGestureDetection.tsx # Core gesture recognition
 │   ├── store/
@@ -53,14 +51,14 @@ navigation-hand-gesture-recognition/
 │   │   │   └── DocumentationView.tsx   # Documentation component
 │   │   ├── demo/
 │   │   │   ├── page.tsx                # Demo page route
-│   │   │   └── DemoView.tsx            # Demo component dengan gesture control
+│   │   │   └── DemoView.tsx            # Demo component with gesture control
 │   │   └── contact/
 │   │       ├── page.tsx                # Contact page route
 │   │       └── ContactView.tsx         # Contact component
 │   ├── fonts/
 │   │   ├── GeistVF.woff                # Geist variable font
 │   │   └── GeistMonoVF.woff           # Geist mono variable font
-│   ├── layout.tsx                      # Root layout dengan SEO optimized
+│   ├── layout.tsx                      # Root layout with SEO optimized
 │   ├── page.tsx                        # Main page route
 │   └── globals.css                     # Global CSS styles
 └── public/
@@ -72,95 +70,111 @@ navigation-hand-gesture-recognition/
 └── README.md
 ```
 
-## 🛠️ Teknologi yang Digunakan
+## 🛠️ Technology Stack
 
 ### Frontend Framework
+
 - **Next.js 14** (App Router, React Server Components)
 - **TypeScript** (Strict mode, fully typed)
-- **Tailwind CSS** (Styling dan animasi)
+- **Tailwind CSS** (Styling and animations)
 - **Zustand** (Global state management)
 
 ### AI & Computer Vision
+
 - **MediaPipe Tasks Vision** (^0.10.22) - Gesture Recognition
 - **WebAssembly (WASM)** - High-performance AI processing
-- **WebRTC** - Camera access dan video streaming
+- **WebRTC** - Camera access and video streaming
 
 ### UI Components & Icons
+
 - **Lucide React** (Modern icon library)
 - **React Icons** (Additional icon set)
 
 ### SEO & Performance
+
 - **next-sitemap** - Automated sitemap generation
-- **PWA ready** - Service worker dan manifest
+- **PWA ready** - Service worker and manifest
 - **SEO optimized** - Meta tags, structured data, Open Graph
 
 ### Development Tools
+
 - **ESLint** - Code linting
 - **Prettier** - Code formatting
 - **PostCSS** - CSS processing
 
-## 📚 Halaman yang Tersedia
+## 📚 Available Pages
 
 ### 1. 🏠 Home (`/`)
-- Hero section dengan animasi background yang menarik
-- Demo gesture icons dengan hover effects
-- Features showcase dengan gradient cards
-- How it works section dengan step-by-step animation
-- Gesture guide dengan visual feedback
-- CTA section dengan statistik performa
+
+- Hero section with attractive background animation
+- Demo gesture icons with hover effects
+- Features showcase with gradient cards
+- How it works section with step-by-step animation
+- Gesture guide with visual feedback
+- CTA section with performance statistics
 
 ### 2. 📖 Documentation (`/documentation`)
-- Penjelasan lengkap tentang Hand Gesture Navigation
-- Informasi teknis MediaPipe dan cara kerja sistem
-- Core functions breakdown dengan code examples
-- Installation guide untuk MediaPipe
-- Performance tips dan best practices
-- Browser compatibility dan requirements
+
+- Complete explanation about Hand Gesture Navigation
+- Technical information about MediaPipe and system workflow
+- Core functions breakdown with code examples
+- Installation guide for MediaPipe
+- Performance tips and best practices
+- Browser compatibility and requirements
 
 ### 3. 🎯 Demo (`/demo`)
-- Live gesture recognition dengan real-time feedback
-- Interactive switch untuk mengaktifkan/menonaktifkan gesture
-- Camera feed dengan hand landmarks visualization
+
+- Live gesture recognition with real-time feedback
+- Interactive switch to enable/disable gesture
+- Camera feed with hand landmarks visualization
 - Gesture status indicator
 - Navigation testing area
 
 ### 4. 📧 Contact (`/contact`)
-- Contact information dan social media links
-- Team information
-- Support dan feedback form (coming soon)
 
-## 🎨 Komponen Utama
+- Contact information and social media links
+- Team information
+- Support and feedback form (coming soon)
+
+## 🎨 Main Components
 
 ### Navbar Component
-Navbar yang telah dibuat memiliki fitur:
-- **Sticky positioning** dengan efek blur saat scroll
-- **Responsive design** dengan hamburger menu untuk mobile
-- **Smooth animations** menggunakan Tailwind CSS
-- **TypeScript typed** tanpa penggunaan `any`
-- **Customizable props** untuk logo, menu items, dan CTA button
+
+The navbar features:
+
+- **Sticky positioning** with blur effect on scroll
+- **Responsive design** with hamburger menu for mobile
+- **Smooth animations** using Tailwind CSS
+- **TypeScript typed** without using `any`
+- **Customizable props** for logo, menu items, and CTA button
 
 ### HandGestureDetection Component
-Core component untuk gesture recognition:
-- **Real-time gesture detection** menggunakan MediaPipe
-- **Camera access** dan video stream management
-- **Auto-navigation** berdasarkan gesture yang terdeteksi
-- **Visual feedback** dengan hand landmarks drawing
-- **Performance optimized** dengan throttling dan cleanup
+
+Core component for gesture recognition:
+
+- **Real-time gesture detection** using MediaPipe
+- **Camera access** and video stream management
+- **Auto-navigation** based on detected gestures
+- **Visual feedback** with hand landmarks drawing
+- **Performance optimized** with throttling and cleanup
 
 ### Global State Management
-Menggunakan Zustand untuk:
+
+Using Zustand for:
+
 - **Gesture navigation switch** ON/OFF
 - **Gesture detection status** tracking
 - **Performance monitoring** state
 
 ### Props Interface:
+
 ```typescript
 interface NavbarProps {
-  logo?: string;           // Text logo
-  navItems?: NavItem[];    // Array menu items
-  ctaText?: string;        // CTA button text
-  ctaHref?: string;        // CTA button link
-  className?: string;      // Additional CSS classes
+  logo?: string; // Text logo
+  navItems?: NavItem[]; // Array menu items
+  ctaText?: string; // CTA button text
+  ctaHref?: string; // CTA button link
+  className?: string; // Additional CSS classes
 }
 
 interface GestureState {
@@ -171,39 +185,43 @@ interface GestureState {
 }
 ```
 
-## 🚀 Cara Menjalankan
+## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js (v18 atau lebih tinggi)
-- npm atau yarn
-- Browser modern yang mendukung WebRTC
-- Camera untuk gesture recognition
+
+- Node.js (v18 or higher)
+- npm or yarn
+- Modern browser that supports WebRTC
+- Camera for gesture recognition
 
 ### Installation
 
 1. Clone repository:
+
 ```bash
 git clone https://github.com/ahmdriyo/navigation-hand-gesture-recognition.git
 cd navigation-hand-gesture-recognition
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
-# atau
+# or
 yarn install
 ```
 
-3. Jalankan development server:
+3. Run development server:
+
 ```bash
 npm run dev
-# atau
+# or
 yarn dev
 ```
 
-4. Buka browser dan akses: `http://localhost:3000`
+4. Open browser and access: `http://localhost:3000`
 
-### Build untuk Production
+### Build for Production
 
 ```bash
 npm run build
@@ -216,45 +234,50 @@ npm start
 npm run postbuild
 ```
 
-## 🎯 Cara Menggunakan Gesture Navigation
+## 🎯 How to Use Gesture Navigation
 
-1. **Aktifkan Gesture Navigation**: Klik switch pada halaman demo
-2. **Berikan Akses Camera**: Izinkan browser mengakses camera
-3. **Coba Gesture**: Lakukan gesture yang didukung di depan camera
-4. **Tahan Gesture**: Tahan gesture selama 1 detik untuk trigger navigasi
-5. **Navigasi Otomatis**: Sistem akan mengarahkan ke halaman yang sesuai
+1. **Enable Gesture Navigation**: Click the switch on the demo page
+2. **Grant Camera Access**: Allow the browser to access the camera
+3. **Try Gestures**: Perform supported gestures in front of the camera
+4. **Hold Gesture**: Hold the gesture for 1 second to trigger navigation
+5. **Automatic Navigation**: The system will redirect to the appropriate page
 
-### Tips Penggunaan:
-- Pastikan pencahayaan cukup untuk deteksi optimal
-- Posisikan tangan di depan camera dengan jelas
-- Hindari background yang terlalu ramai
-- Gunakan gesture dengan confidence tinggi untuk hasil terbaik
+### Usage Tips:
+
+- Ensure adequate lighting for optimal detection
+- Position your hand clearly in front of the camera
+- Avoid overly busy backgrounds
+- Use gestures with high confidence for best results
 
 ## � Performance & Specifications
 
 ### System Requirements
+
 - **Browser**: Chrome 88+, Firefox 78+, Safari 14+, Edge 88+
 - **Dependencies**: WebAssembly (WASM), WebRTC, MediaDevices API
-- **Camera**: Any standard webcam atau device camera
+- **Camera**: Any standard webcam or device camera
 - **Connection**: HTTPS required for production camera access
 
 ### Performance Metrics
+
 - **Accuracy**: 95%+ gesture recognition rate
 - **Response Time**: < 100ms average
 - **Frame Rate**: 30 FPS real-time processing
 - **Bundle Size**: ~15MB (MediaPipe model included)
 - **Memory Usage**: ~50MB peak during processing
 
-## �📖 Dokumentasi MediaPipe
+## 📖 MediaPipe Documentation
 
-Untuk informasi lengkap tentang teknologi MediaPipe yang digunakan:
+For complete information about the MediaPipe technology used:
 
 ### Official Documentation
+
 - [MediaPipe Gesture Recognition](https://developers.google.com/mediapipe/solutions/vision/gesture_recognizer)
 - [MediaPipe Tasks Vision](https://developers.google.com/mediapipe/solutions/vision/index)
 - [MediaPipe Official Website](https://mediapipe.dev/)
 
 ### Additional Resources
+
 - [MediaPipe GitHub Repository](https://github.com/google/mediapipe)
 - [MediaPipe Community](https://github.com/google/mediapipe/discussions)
 - [WebAssembly Documentation](https://webassembly.org/docs/)
@@ -263,7 +286,7 @@ Untuk informasi lengkap tentang teknologi MediaPipe yang digunakan:
 
 **⭐ Star this repository if you found it helpful! ⭐**
 
-Dibuat dengan ❤️ menggunakan Next.js 14, TypeScript, dan MediaPipe AI
+Built with ❤️ using Next.js 14, TypeScript, and MediaPipe AI
 
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
